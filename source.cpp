@@ -8,7 +8,10 @@ int hieu(int a, int b);
 {
 return a-b;
 }
-
+int tich(int a, int b);
+{
+return a*b;
+}
 int main()
 {
 	int a, b;
@@ -17,13 +20,16 @@ int main()
 	cin >> a;
 	cout << "Nhap so nguyen 2: ";
 	cin >> b;
-	cout << "Chon phep toan (+,-) ";
+	cout << "Chon phep toan (+,-,*) ";
 	cin >> phepToan;
 	if(phepToan=="-"){
 	count<<"Hieu ="<<hieu(a,b)<<endl;
 
         if(phepToan=="+")
-        count<<"Bang :"<<tong(a,b)<<endl;
+        count<<"Tong :"<<tong(a,b)<<endl;
+
+ 	if(phepToan=="*")
+        count<<"Tich :"<<tich(a,b)<<endl;
 
 	system("pause");
 	return 0;
