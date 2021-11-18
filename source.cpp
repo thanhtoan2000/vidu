@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 int tong(int a, int b);
+{
+return a+b;
+}
 int hieu(int a, int b);
 {
 return a-b;
@@ -18,7 +21,10 @@ int main()
 	cin >> phepToan;
 	if(phepToan=="-"){
 	count<<"Hieu ="<<hieu(a,b)<<endl;
-}
+
+        if(phepToan=="+")
+        count<<"Bang :"<<tong(a,b)<<endl;
+
 	system("pause");
 	return 0;
 }
